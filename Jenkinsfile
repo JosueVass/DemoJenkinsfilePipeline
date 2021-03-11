@@ -3,9 +3,7 @@ pipeline {
 	
 	stages {
 		stage ('Build') {
-			steps {
-				git 'https://github.com/JosueVass/DemoPipeline.git'
-			    
+			steps {	    
 			    bat 'mvn clean'
 				bat 'mvn -B compile'
 			}
